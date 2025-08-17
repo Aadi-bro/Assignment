@@ -15,8 +15,4 @@
     "jest": "^30.0.5",
     "ts-jest": "^29.4.1"
   },
-  "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
-  }
-}
+  "scripts":
