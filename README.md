@@ -57,6 +57,3 @@ Assignment/
 - **Accessibility:**
   - ARIA labels and keyboard-friendly controls.
 
----
-
-Feel free to extend this library with more components or features as needed!
