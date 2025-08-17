@@ -1,7 +1,6 @@
 import React from 'react';
 import type { InputFieldProps } from './InputField.types';
 import styles from './InputField.module.css';
-
 const InputField: React.FC<InputFieldProps> = ({
   value = '',
   onChange,

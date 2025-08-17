@@ -1,7 +1,6 @@
 import React from 'react';
 import type { DataTableProps, Column } from './DataTable.types';
 import styles from './DataTable.module.css';
-
 function sortData<T>(data: T[], column: Column<T>, direction: 'asc' | 'desc') {
   return [...data].sort((a, b) => {
     const aValue = a[column.dataIndex];
