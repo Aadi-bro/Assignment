@@ -1,0 +1,39 @@
+.dataTable {
+  width: 100%;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+th, td {
+  padding: 0.75em 1em;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+th {
+  background: #fafafa;
+  font-weight: 600;
+}
+tr.selected {
+  background: #e3f2fd;
+}
+.sortBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: #1976d2;
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+}
+.loading, .empty {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+@media (max-width: 600px) {
+  th, td { padding: 0.5em 0.5em; font-size: 0.95em; }
+}

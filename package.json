@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/react": "^8.6.14",
+    "@storybook/react-vite": "^8.6.14",
+    "@testing-library/jest-dom": "^6.7.0",
+    "@testing-library/react": "^16.3.0",
+    "jest": "^30.0.5",
+    "storybook": "^8.6.14",
+    "ts-jest": "^29.4.1"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006"
+  }
+}

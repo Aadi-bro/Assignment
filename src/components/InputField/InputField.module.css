@@ -1,0 +1,79 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  width: 100%;
+}
+.label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input {
+  width: 100%;
+  padding: 0.5em 2.5em 0.5em 0.75em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+.filled .input {
+  background: #f5f5f5;
+  border: none;
+}
+.outlined .input {
+  border: 1px solid #ccc;
+}
+.ghost .input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.sm .input { font-size: 0.85rem; padding: 0.25em 2em 0.25em 0.5em; }
+.md .input { font-size: 1rem; }
+.lg .input { font-size: 1.15rem; padding: 0.75em 2.5em 0.75em 1em; }
+.disabled .input {
+  background: #eee;
+  color: #aaa;
+  cursor: not-allowed;
+}
+.invalid .input {
+  border-color: #e53935;
+}
+.helperText {
+  color: #888;
+  font-size: 0.85em;
+}
+.errorText {
+  color: #e53935;
+  font-size: 0.85em;
+}
+.clearBtn, .toggleBtn {
+  position: absolute;
+  right: 2.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: #888;
+}
+.toggleBtn { right: 0.5em; }
+.loader {
+  position: absolute;
+  right: 0.5em;
+  width: 1em;
+  height: 1em;
+  border: 2px solid #ccc;
+  border-top: 2px solid #888;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.light .input { background: #fff; color: #222; }
+.dark .input { background: #222; color: #fff; border-color: #444; }
