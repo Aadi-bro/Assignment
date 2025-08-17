@@ -15,4 +15,11 @@
     "jest": "^30.0.5",
     "ts-jest": "^29.4.1"
   },
-  "scripts":
+     "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "predeploy": "npm run build-storybook",
+    "deploy": "gh-pages -d storybook-static"
+  }
+}
+
